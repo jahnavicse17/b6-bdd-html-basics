@@ -1,11 +1,56 @@
+<!DOCTYPE html> <!--Representing HTML Doc-->
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--It is for mentoning particular browser-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Page will open based on a device width -->
+        <title>CSS HTML File</title> <!--Site Title for easy browsing in google-->
+        <meta description="HTML CSS Page" keywords="html, bootcamp"><!--Site description will be added here and search keywords to browse site-->
+    </head>
+
+    <table border="1" name="Employee">
+    <h1>HTML Table</h1>
+    <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>E-mail</th>
+        <th>Address</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Joe</td>
+        <td>S</td>
+        <td>10</td>
+        <td>joe@abc.com</td>
+        <td>Joe, Richmond</td>
+    </tr>
+    <tr>
+        <td>Jane</td>
+        <td>S</td>
+        <td>20</td>
+        <td>jane@abc.com</td>
+        <td>Jane, California</td>
+    </tr>
+    <tr>
+        <td>Paul</td>
+        <td>K</td>
+        <td>50</td>
+        <td>paul@google.com</td>
+        <td>Paul, UK</td>
+    </tr>
+    </tbody>
+</table>
+<br>
 <form id=""student">
     <div>
         <label>First Name: </label>
-        <input type="text" name="firstname" value="Jan"/>
+        <input type="text" name="firstname" value="Jan"/> <!--Value is some default we assign some data-->
     </div>
     <div>
         <label>Last Name: </label>
-        <input type="text" name="lastname" value="Som"/>
+        <input type="text" name="lastname" placeholder="Enter Last Name"/>
     </div>
     <div>
         <label>Age: </label>
@@ -17,27 +62,33 @@
     </div>
     <div>
         <label>Address: </label>
-        <input type="textarea" name="address"/>
+        <textarea placeholder="Enter Address" name="address" id="address1" rows="5" cols="10"></textarea>
     </div>
     <div>
         <label>Gender: </label>
         <select id="gender" name="gender">
-            <option name="Male" value="m">Male</option>
-            <option name="Female" value="f">Female</option>
+            <option>Male</option>
+            <option>Female</option>
         </select>
     </div>
     <div>
         <label>Section: </label>
-        <input type="radio" name="Electronics"/>Electronics 
-        <input type="radio" name="Computers"/>Computers
-        <input type="radio" name="Mechanical"/>Mechanical
-        <input type="radio" name="Chemical"/>Chemical
+        <input type="radio" name="section" value="section1" id="section"/>Electronics 
+        <input type="radio" name="section" value="section1"/>Computers
+        <input type="radio" name="section" value="section1"/>Mechanical
+        <input type="radio" name="section" value="section1"/>Chemical
     </div>
     <div>
         <label>Fav Sport: </label>
-    <input type="checkbox" name="Cricket"/>Cricket
-    <input type="checkbox" name="Basket Ball"/>Basket Ball
-    <input type="checkbox" name="Soccer"/>Soccer
-    <input type="checkbox" name="Volley Ball"/>Volley Ball
+    <input type="checkbox" name="fav-sport" value="sport" id="sport1"/>Cricket
+    <input type="checkbox" name="fav-sport"/>Basket Ball
+    <input type="checkbox" name="fav-sport"/>Soccer
+    <input type="checkbox" name="fav-sport"/>Volley Ball
     </div>
 </form>
+<br>
+<div id=""footer1">&gt;&lt;&copy;&reg;$&dollar; This is Footer, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ab nostrum fugit numquam modi totam quas atque eveniet! Omnis vitae minima modi quia quis deleniti veniam ullam, <span>vero atque fugiat.</span> 
+    <!--id/name atribute is for identifying unique element so that easily we can identify info , span is in line(wont break text) element and div is block ele -->
+</div>
+<p name="footer2">Footer &nbsp&nbsp2</p><!--Special characters like &nbsp, &gt, &lt, &copy, &reg etc is for spaces and reprsent html entity, without it big space also consider as one space-->
+</html>
