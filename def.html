@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--It is for mentoning particular browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Page will open based on a device width -->
+    <title>CSS HTML File</title>
+    <!--Site Title for easy browsing in google-->
+    <meta description="HTML CSS Page" keywords="html, bootcamp">
+    <!--Site description will be added here and search keywords to browse site-->
+</head>
+
+<body>
+    <div style=" font-size: 30px;  color: rgb(32, 7, 63); text-align: center;">
+        <div style="font-size: 40px; color: red; margin: 0 auto;">
+            Here's Your data:
+        </div>
+        The Username is: <span id="username">UserName</span><br>
+        The Password is: <span id="password">Password</span>
+    </div>
+
+    <script>
+        //displaying the value from local storage to another page by their respective Ids
+        document.getElementById("username").innerHTML = localStorage.getItem("uname");
+        document.getElementById("password").innerHTML = localStorage.getItem("pwd");
+    </script>
+
+</body>
+
+</html>

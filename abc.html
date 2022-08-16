@@ -1,5 +1,47 @@
 <html>
-  <body>
-    <p>In Git hub file got created and now modified in local</p>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--It is for mentoning particular browser-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Page will open based on a device width -->
+  <title>CSS HTML File</title>
+  <!--Site Title for easy browsing in google-->
+  <meta description="HTML CSS Page" keywords="html, bootcamp">
+  <!--Site description will be added here and search keywords to browse site-->
+  <link rel="stylesheet" href="./abc.css" />
+
+  <script type="text/javascript">
+    function validateForm() {
+      if (document.studentForm.username.value == "") {
+        alert("UserName is required!");
+        document.studentForm.username.focus();
+        return false;}
+    }
+  </script>
+  <script>
+    function getData() {
+      //gettting the values
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      //saving the values in local storage
+      localStorage.setItem("uname", username);
+      localStorage.setItem("pwd", password); }
+  </script>
+  </head>
+<body>
+  <fieldset style="width: fit-content; margin: 0 auto; font-size: 30px;">
+    <form action="./def.html" name="studentForm" onsubmit="return validateForm()" method="get">
+      Username:&nbsp;<input type="text" name="username" id="username" placeholder="Enter username" /><br><br>
+      Password:&nbsp;<input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      placeholder="Enter password"
+      title="Must contain atleast one number, 1 upper and lowercase letter, atleast 8 or more chars" required
+      oninvalid="this.setCustomValidity('Enter Password')" oninput="this.setCustomValidity('')" />
+      <br><br>
+      <input type="submit" name="submit" value="Log In" onclick="getData()" />
+    </form>
+  </fieldset>
+</body>
+
 </html>
